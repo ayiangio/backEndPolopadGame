@@ -15,7 +15,7 @@
 
 ```
 $ git clone https://github.com/ayiangio/backEndPolopadGame.git
-$ cd restApiWithExpress
+$ cd backEndPolopadGame
 $ npm install
 ```
 ## Create Environment
