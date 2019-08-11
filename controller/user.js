@@ -50,7 +50,6 @@ module.exports = {
     login: (req, res) => {
         const email = req.body.email
         const pass = req.body.password
-        console.log(email)
         user.getByEmail(email)
             .then((result) => {
                 const dataUser = result[0]
@@ -61,7 +60,7 @@ module.exports = {
                     dataUser.token = jwt.sign({
                         idUser: dataUser.idUser
                     }, process.env.SECRET_KEY, {
-                            expiresIn: '120m'
+                            expiresIn: '120h'
                         })
 
                     delete dataUser.salt

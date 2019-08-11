@@ -13,7 +13,7 @@ module.exports = {
     return res.status(resultPrint.status_code).json(resultPrint)
   },
   getRandomSalt :(length)=>{
-    return crypto.randomBytes(Math.ceil(length*7).toString('hex').slice(0,length))
+    return crypto.randomBytes(Math.ceil(length*7)).toString('hex').slice(0,length)
   },
   setPass : (password,salt)=>{
     let hash = crypto.createHmac('sha256',salt)

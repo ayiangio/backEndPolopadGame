@@ -24,6 +24,7 @@ module.exports = {
         })
     },
     register: (data) => {
+        console.log(data)
         return new Promise((resolve, reject) => {
             connection.query('INSERT INTO user SET ?', data, (err, result) => {
                 if (!err) {
@@ -59,7 +60,7 @@ module.exports = {
     },
     deleteToken: (idUser) => {
         return new Promise((resolve, reject) => {
-            connection.query(`UPDATE user SET token = ? WHERE idUser =?`, [' ', idUser], (err, result) => {
+            connection.query(`UPDATE user SET token = ? WHERE idUser =?`, [' ', Number(idUser)], (err, result) => {
                 if (!err) {
                     resolve(result)
                 } else {
