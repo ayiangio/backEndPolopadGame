@@ -5,7 +5,8 @@ const Cors = require('cors')
 const xssFilter = require('x-xss-protection')
 const port = process.env.PORT || 1010
 const bodyPraser = require('body-parser')
-const user = require('./routes/user')
+const user = require('./routes/user');
+const score = require('./routes/score');
 
 app.use(
 	bodyPraser.urlencoded({
@@ -19,7 +20,8 @@ console.log('Connect Succes On '+port);
 // app.use(logger('dev'))
 
 //Route to endpoint
-user(app)
+user(app);
+score(app);
 
 // var whitelist = ['https://libraryskuy.netlify.com/book', 'http://example2.com']
 // var corsOptions = {
