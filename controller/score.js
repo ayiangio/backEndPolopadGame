@@ -12,6 +12,16 @@ module.exports = {
                 console.log(error)
             })
     },
+    getScoreId: (req, res) => {
+        const idUser = req.params.idUser
+        score.getLeadById(idUser)
+            .then((resultUser) => {
+                respon.response(res, resultUser, 200)
+            })
+            .catch((error) => {
+                console.log(error)
+            })
+    },
     postScore: (req, res) => {
         const data = {
             idUser : req.body.idUser,

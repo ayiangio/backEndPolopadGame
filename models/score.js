@@ -17,6 +17,24 @@ module.exports = {
                 })
         })
     },
+    getLeadById: (idUser) => {
+        return new Promise((resolve, reject) => {
+            connection.query(
+                `SELECT user.fullName,board.score
+				FROM board 
+				INNER JOIN user
+                ON user.idUser = board.idUser
+                where user.idUser = ?
+                ORDER BY Score Desc
+				LIMIT 1 OFFSET 0`, idUser,(err, result) => {
+                    if (!err) {
+                        resolve(result)
+                    } else {
+                        reject(new Error(err))
+                    }
+                })
+        })
+    },
     postBoard: (data) => {
         console.log(data)
         return new Promise((resolve, reject) => {
