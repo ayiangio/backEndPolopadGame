@@ -46,6 +46,18 @@ module.exports = {
                 }
             })
         })
+    },
+    updateBoard: (data) => {
+        console.log(data)
+        return new Promise((resolve, reject) => {
+            connection.query(`UPDATE board SET score = ? WHERE idUser =? `, [data.score, data.idUser], (err, result) => {
+                if (!err) {
+                    resolve(result)
+                } else {
+                    reject(new Error(err))
+                }
+            })
+        })
     }
 }
     

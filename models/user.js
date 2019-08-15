@@ -32,7 +32,7 @@ module.exports = {
                 } else {
                     reject(new Error(err))
                 }
-            })
+            })                       
         })
     },
     getByEmail: (email) => {

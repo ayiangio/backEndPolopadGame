@@ -35,4 +35,17 @@ module.exports = {
                 console.log(error)
             })
     },
+    updateScore: (req, res) => {
+        const data = {
+            idUser : req.body.idUser,
+            score:  req.body.score
+        }
+        score.updateBoard(data)
+            .then(() => {
+                respon.response(res, data, 200)
+            })
+            .catch((error) => {
+                console.log(error)
+            })
+    }
 }
