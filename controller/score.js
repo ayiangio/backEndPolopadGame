@@ -12,6 +12,29 @@ module.exports = {
                 console.log(error)
             })
     },
+    getPattern: (req, res) => {
+        score.getPattern()
+            .then((resultUser) => {
+                respon.response(res, resultUser, 200)
+            })
+            .catch((error) => {
+                console.log(error)
+            })
+    },
+
+    updatePattern: (req, res) => {
+        const data = {
+            pattren : req.body.pattren
+        }
+        console.log(data)
+        score.updatePattern(data)
+            .then((resultUser) => {
+                respon.response(res, resultUser, 200)
+            })
+            .catch((error) => {
+                console.log(error)
+            })
+    },
     getScoreId: (req, res) => {
         const idUser = req.params.idUser
         score.getLeadById(idUser)

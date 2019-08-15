@@ -58,6 +58,29 @@ module.exports = {
                 }
             })
         })
-    }
+    },
+    getPattern: () => {
+        return new Promise((resolve, reject) => {
+            connection.query(`SELECT pattren from pattern`, (err, result) => {
+                if (!err) {
+                    resolve(result)
+                } else {
+                    reject(new Error(err))
+                }
+            })
+        })
+    },
+    updatePattern: (data) => {
+        console.log(data)
+        return new Promise((resolve, reject) => {
+            connection.query(`UPDATE pattern SET ? WHERE idPattern = ?`, [data,1], (err, result) => {
+                if (!err) {
+                    resolve(result)
+                } else {
+                    reject(new Error(err))
+                }
+            })
+        })
+    },
 }
     

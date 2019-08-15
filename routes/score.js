@@ -7,4 +7,6 @@ module.exports = (app) => {
         .get('/score/:idUser', auth.authInfo,score.getScoreId)
         .post('/score', auth.authInfo, auth.accessToken, score.postScore)
         .patch('/score', auth.authInfo, auth.accessToken, score.updateScore)
+        .get('/pattern',auth.authInfo,score.getPattern)
+        .patch('/pattern', auth.authInfo, auth.accessToken, score.updatePattern)
 }
