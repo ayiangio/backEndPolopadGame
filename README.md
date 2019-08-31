@@ -38,3 +38,49 @@ WHITELIST ="http://localhost:5000,http:example1.com"
 ```
 $ npm start
 ```
+
+## Endpoint
+* Get 
+
+    <img width="500" src="./img/1.png"> 
+```
+http://localhost:5000/score
+http://localhost:5000/score/:idUser
+http://localhost:5000/pattern
+http://localhost:5000/user/
+http://localhost:5000/user/token/:token
+```
+
+* Post 
+
+    <img width="500" src="./img/2.png">
+```
+http://localhost:5000/score
+http://localhost:5000/user/register
+http://localhost:5000/user/
+http://localhost:5000/user/logout
+http://localhost:5000/user/logout
+```
+
+* Patch
+
+    <img width="500" src="./img/3.png">
+
+```
+http://localhost:5000/score
+http://localhost:5000/pattern
+```
+
+## Contributors
+<center>
+  <table>
+    <tr>
+      <td align="center">
+        <a href="https://github.com/andreferi3">
+          <img width="100" src="https://avatars3.githubusercontent.com/u/15377357?s=460&v=4" alt="Ayiangio"><br/>
+          <sub><b>Ayi Angio</b></sub>
+        </a>
+      </td>
+    </tr>
+  </table>
+</center>
