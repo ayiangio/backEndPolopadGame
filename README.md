@@ -80,7 +80,7 @@ http://localhost:5000/pattern
   <table>
     <tr>
       <td align="center">
-        <a href="https://github.com/andreferi3">
+        <a href="https://github.com/ayiangio">
           <img width="100" src="https://avatars3.githubusercontent.com/u/15377357?s=460&v=4" alt="Ayiangio"><br/>
           <sub><b>Ayi Angio</b></sub>
         </a>
