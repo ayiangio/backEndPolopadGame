@@ -41,8 +41,6 @@ $ npm start
 
 ## Endpoint
 * Get 
-
-    <img width="500" src="./img/1.png"> 
 ```
 http://localhost:5000/score
 http://localhost:5000/score/:idUser
@@ -52,8 +50,6 @@ http://localhost:5000/user/token/:token
 ```
 
 * Post 
-
-    <img width="500" src="./img/2.png">
 ```
 http://localhost:5000/score
 http://localhost:5000/user/register
@@ -63,8 +59,6 @@ http://localhost:5000/user/logout
 ```
 
 * Patch
-
-    <img width="500" src="./img/3.png">
 
 ```
 http://localhost:5000/score
