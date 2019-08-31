@@ -70,6 +70,8 @@ http://localhost:5000/user/logout
 http://localhost:5000/score
 http://localhost:5000/pattern
 ```
+## Collection
+You can check the [collection](https://www.getpostman.com/collections/6c31e2892c3173227763)
 
 ## Contributors
 <center>
