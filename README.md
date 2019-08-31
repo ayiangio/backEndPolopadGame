@@ -11,6 +11,17 @@
 
 - Node.js - Download and install [Node.js](https://nodejs.org/en/)
 - Mysql - Download and install [Mysql](https://www.mysql.com/downloads/)
+
+## How to run the app ?
+1. Open CMD or Terminal and enter to the app directory
+2. Type `npm install`
+3. Make a new file called **.env** in the root directory, set up first [here](#Create-Environment)
+4. Turn on Web Server and MySQL can using Third-party tool like xampp, etc.
+5. Create Database on **phpmyadmin**
+6. Open Postman desktop application or Chrome web app extension that has installed before
+7. Choose HTTP Method and enter request url.(ex. localhost:3000)
+8. You can see all the end point [here](#Endpoint) or you can see Collection [here](https://www.getpostman.com/collections/6c31e2892c3173227763)
+
 ## Instalation
 
 ```
@@ -64,9 +75,6 @@ http://localhost:5000/user/logout
 http://localhost:5000/score
 http://localhost:5000/pattern
 ```
-## Collection
-You can check the [collection](https://www.getpostman.com/collections/6c31e2892c3173227763)
-
 ## Contributors
 <center>
   <table>
