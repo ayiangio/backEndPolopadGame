@@ -50,31 +50,6 @@ WHITELIST ="http://localhost:5000,http:example1.com"
 $ npm start
 ```
 
-## Endpoint
-* Get 
-```
-http://localhost:5000/score
-http://localhost:5000/score/:idUser
-http://localhost:5000/pattern
-http://localhost:5000/user/
-http://localhost:5000/user/token/:token
-```
-
-* Post 
-```
-http://localhost:5000/score
-http://localhost:5000/user/register
-http://localhost:5000/user/
-http://localhost:5000/user/logout
-http://localhost:5000/user/logout
-```
-
-* Patch
-
-```
-http://localhost:5000/score
-http://localhost:5000/pattern
-```
 ## Contributors
 <center>
   <table>
